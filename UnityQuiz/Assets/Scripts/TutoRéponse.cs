@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class TutoRéponse : MonoBehaviour
 {
-    public void RéponseChoisie()
+    public void TutoRéponseChoisie()
     {
         if (GameObject.Find("QuizManager").GetComponent<TutoQuiz>().Réponse == transform.GetChild(0).GetComponent<Text>().text)
         {
@@ -15,7 +15,7 @@ public class TutoRéponse : MonoBehaviour
             Debug.Log("Perdu");
         }
 
-        GameObject.Find("QuizManager").GetComponent<TutoQuiz>().PoseUneQuestion();
+        GameObject.Find("QuizManager").GetComponent<TutoQuiz>().TutoPoseUneQuestion();
     }
 
    

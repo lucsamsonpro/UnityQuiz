@@ -30,7 +30,7 @@ public class TutoQuiz : MonoBehaviour
         Quiz[1] = "Dans la mythologie grecque, à quelle dynastie appartiennent Agamemnon, Ménélas, Oreste et Électre ?§Atrides§Arkonènes§Atrides";
         Quiz[2] = "Quelle est la densité papale de la cité du Vatican ?§1 pape au km²§2,27 papes au km²§2,27 papes au km²";
 
-        PoseUneQuestion();
+        TutoPoseUneQuestion();
     }
 
     // Update is called once per frame
@@ -38,7 +38,7 @@ public class TutoQuiz : MonoBehaviour
     {
         TexteScore.text = "Score\n" + Score;
     }
-    public void PoseUneQuestion()
+    public void TutoPoseUneQuestion()
     { 
         Index=Random.Range(0, Quiz.Length);
         string[] Col = Quiz[Index].Split('§');
