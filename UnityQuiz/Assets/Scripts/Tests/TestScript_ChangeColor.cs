@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TestChangeColor : MonoBehaviour
+public class TestScript_ChangeColor : MonoBehaviour
 {
     private Color CouleurRouge = Color.red;
     private Color CouleurBleu = new Color (0.33f, 0.53f, 0.94f);

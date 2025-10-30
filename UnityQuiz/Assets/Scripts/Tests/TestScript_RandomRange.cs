@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public class TestRandomRange : MonoBehaviour
+public class TestScript_RandomRange : MonoBehaviour
 {
     public int Nbr;
     List<int> Memory = new List<int>();
