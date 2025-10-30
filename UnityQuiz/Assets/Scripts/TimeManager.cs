@@ -21,7 +21,7 @@ public class TimeManager : MonoBehaviour
     public void TimerStart()
     {
         Debug.Log("Lancement timer");
-        targetTime = 5.0f;
+        targetTime = 10.0f;
         TimerOn = true;
     }
 
