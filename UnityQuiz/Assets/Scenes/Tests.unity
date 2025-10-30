@@ -607,10 +607,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 955586953}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1295d0a657a0fd241968626f8eab94f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c6ca96129359c242a9e97a15b0ad6a1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TestRandomRange
-  Nbr: 0
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleTimer
+  targetTime: 5
 --- !u!1 &1260677339
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,7 +21,7 @@ public class ButtonsManager : MonoBehaviour
 
     public void CouleurRéponse()
     {
-        if (GameObject.Find("QuizManager").GetComponent<QuizQuestion>().Réponse == GameObject.Find("Réponse1").GetComponent<Text>().text)
+        if (GameObject.Find("QuizManager").GetComponent<QuestionManager>().Réponse == GameObject.Find("Réponse1").GetComponent<Text>().text)
         {
             GameObject.Find("Bouton1").GetComponent<Image>().color = Vert;
         }
@@ -29,7 +29,7 @@ public class ButtonsManager : MonoBehaviour
         {
             GameObject.Find("Bouton1").GetComponent<Image>().color = Rouge;
         }
-        if (GameObject.Find("QuizManager").GetComponent<QuizQuestion>().Réponse == GameObject.Find("Réponse2").GetComponent<Text>().text)
+        if (GameObject.Find("QuizManager").GetComponent<QuestionManager>().Réponse == GameObject.Find("Réponse2").GetComponent<Text>().text)
         {
             GameObject.Find("Bouton2").GetComponent<Image>().color = Vert;
         }
@@ -37,7 +37,7 @@ public class ButtonsManager : MonoBehaviour
         {
             GameObject.Find("Bouton2").GetComponent<Image>().color = Rouge;
         }
-        if (GameObject.Find("QuizManager").GetComponent<QuizQuestion>().Réponse == GameObject.Find("Réponse3").GetComponent<Text>().text)
+        if (GameObject.Find("QuizManager").GetComponent<QuestionManager>().Réponse == GameObject.Find("Réponse3").GetComponent<Text>().text)
         {
             GameObject.Find("Bouton3").GetComponent<Image>().color = Vert;
         }
@@ -45,7 +45,7 @@ public class ButtonsManager : MonoBehaviour
         {
             GameObject.Find("Bouton3").GetComponent<Image>().color = Rouge;
         }
-        if (GameObject.Find("QuizManager").GetComponent<QuizQuestion>().Réponse == GameObject.Find("Réponse4").GetComponent<Text>().text)
+        if (GameObject.Find("QuizManager").GetComponent<QuestionManager>().Réponse == GameObject.Find("Réponse4").GetComponent<Text>().text)
         {
             GameObject.Find("Bouton4").GetComponent<Image>().color = Vert;
         }
