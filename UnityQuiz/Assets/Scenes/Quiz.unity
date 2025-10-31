@@ -3084,8 +3084,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Ce QCM a pour th\xE8mes les jeux vid\xE9o, l'histoire, les sciences...
     et bien d'autres !\n\nPour gagner, c'est tr\xE8s simple :\nr\xE9pondez bon \xE0
-    5 questions.\n\nMais attention : si vous r\xE9pondez mal ou trop lentement \xE0
-    5 fois,\nla partie sera perdue.\n\nBonne chance !\n\\(^\u30EE^)/"
+    5 questions.\n\nMais attention : si vous r\xE9pondez mal ou trop lentement 5
+    fois,\nla partie sera perdue.\n\nBonne chance !\n\\(^\u30EE^)/"
 --- !u!222 &1817100859
 CanvasRenderer:
   m_ObjectHideFlags: 0
