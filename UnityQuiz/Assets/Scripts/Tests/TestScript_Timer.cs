@@ -1,10 +1,18 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class SimpleTimer : MonoBehaviour
 {
     public bool TimerOn = false;
     public float targetTime;
+    private Text TimerDisplay;
+    private int IntTargetTime;
+
+    private void Start()
+    {
+        TimerDisplay = GameObject.Find("Chrono").GetComponent<Text>();
+    }
 
     void Update()
     {
@@ -16,6 +24,8 @@ public class SimpleTimer : MonoBehaviour
                 timerEnded();
             }
         }
+        IntTargetTime = (int)targetTime;
+        TimerDisplay.text = "Chrono\n" + IntTargetTime + "s";
     }
 
     void OnMouseDown()

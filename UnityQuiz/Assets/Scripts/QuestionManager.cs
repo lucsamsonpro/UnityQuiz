@@ -51,7 +51,7 @@ public class QuestionManager : MonoBehaviour
         GameObject.Find("QuizManager").GetComponent<ViewManager>().CacherEcranDeFin();
 
         //Initialisation
-        Quiz = new string[64];
+        Quiz = new string[65];
         RightScore = 0;
         WrongScore = 0;
         AnsweredScore = 0;
@@ -96,7 +96,7 @@ public class QuestionManager : MonoBehaviour
         Quiz[34] = "Dans la mythologie grecque, qui sont les parents de Épaphos ?§Io et Zeus (sous l’apparence d’un nuage)§Io et Apollon§Io et Hermès§Io et Dionysos§Io et Zeus (sous l’apparence d’un nuage)";
         Quiz[35] = "Dans la mythologie grecque, qui sont les parents de Perséphone ?§Déméter et Poséidon§Déméter et Zeus (sous l’apparence d’un serpent)§Déméter et Ouranos§Déméter et Cronos§Déméter et Zeus (sous l’apparence d’un serpent)";
         Quiz[36] = "Quel est l’unité de la force ?§le watt§le joule§le newton§le pascal§le newton";
-        Quiz[37] = "Quel gaz est le plus abondant dans l’air ?§Oxygène§Azote§Dioxyde de carbone§Argon§Azote";
+        Quiz[37] = "Quel gaz est le plus abondant dans l’air ?§Dioxygène§Diazote§Dioxyde de carbone§Argon§Diazote";
         Quiz[38] = "Quelle est la formule de l’eau ?§CO2§H2O§O2§CH4§H2O";
         Quiz[39] = "Quel instrument mesure la pression ?§Thermomètre§Voltmètre§Baromètre§Ohmmètre§Baromètre";
         Quiz[40] = "Quelle est l’unité de la puissance électrique ?§volt§ampère§ohm§watt§watt";
@@ -107,22 +107,24 @@ public class QuestionManager : MonoBehaviour
         Quiz[45] = "Quel est le gaz essentiel à la photosynthèse ?§CO2§O2§N2§H2§CO2";
         Quiz[46] = "Quel est le plus grand organe du corps humain ?§Le cerveau§La peau§Le foie§Le cœur§La peau";
         Quiz[47] = "Quelle molécule transporte l’oxygène dans le sang ?§L’eau§L’hémoglobine§La chlorophylle§Le glucose§L’hémoglobine";
-        Quiz[48] = "Quel est le rôle du diaphragme ?§Digérer§Respirer§Filtrer§Circuler§Respirer";
+        Quiz[48] = "A quoi participe le diaphragme ?§La digestion§La respiration§La filtration rénale§La circulation sanguine§La respiration";
         Quiz[49] = "Comment appelle-t-on la fusion de deux gamètes ?§La mitose§La méiose§La fécondation§La respiration§La fécondation";
         Quiz[50] = "Quel est le principal constituant des os ?§Fer§Calcium§Magnésium§Soufre§Calcium";
-        Quiz[51] = "Où se situe l’ADN dans la cellule ?§Cytoplasme§Noyau§Membrane§Ribosome§Noyau";
-        Quiz[52] = "Quel est le producteur primaire dans un écosystème ?§Un herbivore§Un champignon§Une plante§Un carnivore§Une plante";
-        Quiz[53] = "Quel organe filtre le sang dans le corps humain ?§Le cerveau§Le rein§Le cœur§Le pancréas§Le rein";
-        Quiz[54] = "En quelle année a eu lieu la Révolution française ?§1789§1815§1852§1914§1789";
-        Quiz[55] = "Qui était le premier empereur romain ?§César§Auguste§Néron§Trajan§Auguste";
-        Quiz[56] = "Comment est mort le roi de France Charles VIII§Renversé par un cochon dans une rue§Brûlé vif lors d’un bal costumé§Fracassé contre une porte trop basse pour lui et son cheval§Tombé en marchant sur sa barbe§Fracassé contre une porte trop basse pour lui et son cheval";
-        Quiz[57] = "Quel événement marque la fin du Moyen Âge ?§Chute de Rome§Chute de Constantinople§Découverte de l’Amérique§Guerre de Cent Ans§Chute de Constantinople";
-        Quiz[58] = "Qui a découvert l’Amérique en 1492 ?§Vasco de Gama§Christophe Colomb§Fernand de Magellan§James Cook§Christophe Colomb";
-        Quiz[59] = "Quelle guerre a eu lieu de 1914 à 1918 ?§Guerre de Trente Ans§Seconde Guerre mondiale§Première Guerre mondiale§Guerre froide§Première Guerre mondiale";
-        Quiz[60] = "Qui a été le premier président du Conseil national de la Résistance ?§Jean Moulin§Charles de Gaulle§Philippe Leclerc§François Mitterrand§Jean Moulin";
-        Quiz[61] = "D’où était originaire Napoléon Bonaparte ?§Paris§Bretagne§Corse§Guyane§Corse";
-        Quiz[62] = "Quelle ville fut bombardée en 1945 par la bombe atomique ?§Berlin§Tokyo§Hiroshima§Séoul§Hiroshima";
-        Quiz[63] = "Quelle révolution eut lieu en 1917 ?§Française§Industrielle§Russe§Chinoise§Russe";
+        Quiz[51] = "Où se situe l’ADN dans une cellule eucaryote ?§Cytoplasme§Noyau§Membrane§Ribosome§Noyau";
+        Quiz[52] = "Quel organe filtre le sang dans le corps humain ?§Le cerveau§Le rein§Le cœur§Le pancréas§Le rein";
+        Quiz[53] = "En quelle année a eu lieu la Révolution française ?§1789§1815§1852§1914§1789";
+        Quiz[54] = "Qui était le premier empereur romain ?§César§Auguste§Néron§Trajan§Auguste";
+        Quiz[55] = "Comment est mort le roi de France Charles VIII§Renversé par un cochon dans une rue§Brûlé vif lors d’un bal costumé§Fracassé contre une porte trop basse pour lui et son cheval§Tombé en marchant sur sa barbe§Fracassé contre une porte trop basse pour lui et son cheval";
+        Quiz[56] = "Quel événement marque la fin du Moyen Âge ?§Chute de Rome§Chute de Constantinople§Découverte de l’Amérique§Guerre de Cent Ans§Chute de Constantinople";
+        Quiz[57] = "Qui a (re)découvert l’Amérique en 1492 ?§Vasco de Gama§Christophe Colomb§Fernand de Magellan§James Cook§Christophe Colomb";
+        Quiz[58] = "Quelle guerre a eu lieu de 1914 à 1918 ?§Guerre de Quatre Ans§Seconde Guerre mondiale§Première Guerre mondiale§Guerre froide§Première Guerre mondiale";
+        Quiz[59] = "Qui a été le premier président du Conseil national de la Résistance ?§Jean Moulin§Charles de Gaulle§Philippe Leclerc§François Mitterrand§Jean Moulin";
+        Quiz[60] = "D’où était originaire Napoléon Bonaparte ?§Paris§Bretagne§Corse§Guyane§Corse";
+        Quiz[61] = "Quelle ville fut bombardée en 1945 par la bombe atomique ?§Berlin§Tokyo§Hiroshima§Séoul§Hiroshima";
+        Quiz[62] = "Quelle révolution eut lieu en 1917 ?§Française§Industrielle§Russe§Chinoise§Russe";
+        Quiz[63] = "Dans « Qui veut gagner de l’argent en masse », quelle réponse revient à chaque question ?§La réponse A§La réponse B§La réponse C§La réponse D§La réponse D";
+        Quiz[64] = "Dans H2G2, quelle est la réponse à la grande question sur la vie, l'Univers et le reste ?§Oui§Chuck Norris§42§La réponse D§42";
+
 
 
 
@@ -163,6 +165,8 @@ public class QuestionManager : MonoBehaviour
     }
     public void QuizPoseUneQuestion()
     {
+        GameObject myEventSystem = GameObject.Find("EventSystem");
+        myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
         QuizChoisitUneQuestion();
         string[] Col = Quiz[Index].Split('§');
         TexteQuestion.text = Col[0];
@@ -190,5 +194,4 @@ public class QuestionManager : MonoBehaviour
             IndexMemory.Add(Index);
         }
     }
-
 }

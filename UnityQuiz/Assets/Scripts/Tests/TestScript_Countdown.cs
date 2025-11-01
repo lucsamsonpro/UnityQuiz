@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Countdown : MonoBehaviour
 {
     public int duration = 5;
     public int timeRemaining;
     public bool isCountingDown = false;
+    private Text TimerDisplay;
 
     public void Begin()
     {

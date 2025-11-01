@@ -5,6 +5,7 @@ public class ViewManager : MonoBehaviour
 {
     public GameObject EcranDeDébut;
     public GameObject EcranDeQuiz;
+    public GameObject Chrono;
     public GameObject MessageBonneRéponse;
     public GameObject MessageMauvaiseRéponse;
     public GameObject MessageTempsEcoulé;
@@ -20,6 +21,7 @@ public class ViewManager : MonoBehaviour
     {
         EcranDeDébut.SetActive(true);
         EcranDeQuiz.SetActive(true);
+        Chrono.SetActive(false);
         MessageBonneRéponse.SetActive(false);
         MessageMauvaiseRéponse.SetActive(false);
         MessageTempsEcoulé.SetActive(false);
@@ -50,6 +52,16 @@ public class ViewManager : MonoBehaviour
     public void CacherEcranDeQuiz()
     {
         EcranDeQuiz.SetActive(false);
+    }
+
+    public void AfficherChrono()
+    {
+        Chrono.SetActive(true);
+    }
+
+    public void CacherChrono()
+    {
+        Chrono.SetActive(false);
     }
 
     public void AfficherMessageBonneRéponse()

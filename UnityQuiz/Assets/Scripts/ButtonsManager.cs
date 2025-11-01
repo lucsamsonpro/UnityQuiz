@@ -75,4 +75,11 @@ public class ButtonsManager : MonoBehaviour
         GameObject.Find("Bouton4").GetComponent<Button>().enabled = false;
     }
 
+
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
 }
